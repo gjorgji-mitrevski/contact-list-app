@@ -1,0 +1,25 @@
+{
+  "name": "contactlistsos",
+  "version": "1.0.0",
+  "description": "Contact Lists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GorgiMitrevski/contact-list-app.git"
+  },
+  "author": "Gjorgji Mitrevski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GorgiMitrevski/contact-list-app/issues"
+  },
+  "homepage": "https://github.com/GorgiMitrevski/contact-list-app#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
