@@ -82,10 +82,8 @@ body {
 }
 
 
-.notification-number {
-    position: absolute;
-    background-color: red;
-    top:12px;
+.relative-link {
+  position: relative;
 }
 
 
@@ -118,7 +116,7 @@ body {
     border-top: 1px solid #cecece;
     padding: 10px 0px;
 }
-
+/*
 #list-contacts {
     height: 500px; 
 } 
@@ -126,6 +124,12 @@ body {
 #list-contacts {
     overflow: hidden;
     overflow-y: scroll;
+}
+*/
+
+#list-contacts{
+  height: calc(100vh-120px);
+  overflow: auto;
 }
 
 .user-profile-small {
@@ -166,5 +170,38 @@ body {
 }
 
 .bg-light-danger {
-    background-color:  #b3777d;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+#sidebarMenu {
+  padding: 0%;
+}
+
+.side-components {
+  padding: 10px;
+}
+
+.badge-counter {
+  position: absolute;
+  transform: scale(.7);
+  transform-origin: top right;
+  right: .25rem;
+  margin-top: -.25rem;
+}
+
+
+.li-contacts{
+  padding: 10px;
+  border-bottom: 1px solid #bdbcbc;
+  width: 100%;
+}
+
+.no-topm{
+  margin-top: -15px;
+}
+
+.visible{
+  display: none;
 }
