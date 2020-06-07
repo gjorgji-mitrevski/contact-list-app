@@ -81,7 +81,6 @@ class ContactItem {
 
 class ContactList {
   constructor(){
-
     this.myProfile = new Contact('Jason H.');
     this.contacts = [
       new Contact('Jake Ryan', 'assets/images/profile-jake.png', 'Male', '25', 'April 15, 1995', '5th Avenue',
@@ -99,17 +98,17 @@ class ContactList {
       'assets/images/profile-khory.png',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut rhoncus velit.')
     ];
-
-
   }
 
   render(){
-    const renderHook = document.getElementById('list-contacts');
+    // const renderHook = document.getElementById('list-contacts');
+    const renderHook = document.getElementById('ul-lists');
     for(const con of this.contacts){
       const contactItem = new ContactItem(con);
       const contEl = contactItem.render();
       renderHook.append(contEl);
     }
+
   }
 }
 
@@ -137,6 +136,7 @@ class App {
         }
       }
   }
+
 }
 
 const app = new App(new ContactList());

@@ -18,7 +18,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <div class="navbar-collapse offcanvas-collapse " id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto mr-5">
             <li class="nav-item active mr-3">
               <a class="nav-link relative-link" href="#">
@@ -49,6 +49,7 @@
     <!-- second navigation menu -->
     <!-- main - container -->
     <div class="container-fluid">
+        <!--Side bar contacts, new contact, search for contact-->
         <div class="row">
             <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="sidebar-sticky pt-3">
@@ -67,19 +68,22 @@
                         </div>
                     </div>
 
-                    <div class="list-header bg-gradient-light side-components">
+                    <div class="list-header bg-gradient-light side-components" >
                         <label>Sort by: </label>
                         <select>
                             <option>Active Schedule</option>
                         </select>
                     </div>
                     <!--List of contacts-->
-                  <ul class="nav " id="list-contacts">
+                    <div class="sidebar-sticky pt-3" id="list-contacts">
+                  <ul class="nav" id="ul-lists"> <!--id="list-contacts"-->
                   </ul>
+                </div>
                   <!--List of contacts-->
                 </div>
             </nav>
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" id="profile-add-data">
+                <!--Show details of contact-->
                 <div class="row">
                     <div class="col-12 my-3 ">
                         <h2 class="float-left" id="user-name">User Name    </h2>
@@ -147,6 +151,8 @@
                         </div>
                     </div>
                 </div>
+                <!--Show details of contact-->
+                <!--Cards - Schedule-->
                 <div class="row mt-4">
                     <div class="col-12  bg-light pb-3">
                         <div class="list-header">Schedule</div>
@@ -155,11 +161,11 @@
                         <div class="card my-3 mx-3 active-lesson">
                             <div class="card-header">
                                 <div>
-                                    <label class="lesson-termin">trueesday 9:00am </label>
+                                    <label class="lesson-termin">Tuesday 9:00am </label>
                                     <label class="lesson-duration">60 / Weekly </label>
                                     <div class="dropdown float-right">
                                         <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Select action
+                                            Choose an action
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" href="#">Action 1</a>
@@ -171,16 +177,16 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-3">
-                                        <label  class="font-weight-lighter">Sex</label>
-                                        <p class="font-weight-bold" id="name">Male</p>
+                                        <label  class="font-weight-lighter">Service</label>
+                                        <p class="font-weight-bold" id="name">Switch Flip 101</p>
                                     </div>
                                     <div class="col-3">
-                                        <label  class="font-weight-lighter">Sex</label>
-                                        <p class="font-weight-bold">Male</p>
+                                        <label  class="font-weight-lighter">Location</label>
+                                        <p class="font-weight-bold">Fantasy Fa...</p>
                                     </div>
                                     <div class="col-6">
-                                        <label  class="font-weight-lighter">Sex</label>
-                                        <p class="font-weight-bold">Male</p>
+                                        <label  class="font-weight-lighter">Status</label>
+                                        <p class="font-weight-bold">Paid</p>
                                     </div>
                                 </div>
                                 <div class="row border border-danger bg-light-danger">
@@ -198,11 +204,11 @@
                         <div class="card my-3 mx-3 passive-lesson">
                             <div class="card-header">
                                 <div>
-                                    <label class="lesson-termin">trueesday 9:00am </label>
+                                    <label class="lesson-termin">Thursday 2:00pm </label>
                                     <label class="lesson-duration">60 / Weekly </label>
                                     <div class="dropdown float-right">
                                         <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Select action
+                                            Choose an action
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" href="#">Action 1</a>
@@ -212,18 +218,18 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Service</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               </div>
                         </div>
                         <div class="card my-3 mx-3 passive-lesson">
                             <div class="card-header">
                                 <div>
-                                    <label class="lesson-termin">trueesday 9:00am </label>
+                                    <label class="lesson-termin">Saturday 12:45pm </label>
                                     <label class="lesson-duration">60 / Weekly </label>
                                     <div class="dropdown float-right">
                                         <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          Select action
+                                          Choose an action
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                           <a class="dropdown-item" href="#">Action 1</a>
@@ -233,12 +239,13 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Service</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               </div>
                         </div>
                     </div>
                 </div>
+                <!--Cards - Schedule-->
             </main>
         </div>
     </div>

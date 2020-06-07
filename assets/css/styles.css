@@ -30,6 +30,11 @@ body {
   }
 }
 
+.bg-dark{
+  background-color: #2d384a;
+}
+
+
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -90,7 +95,7 @@ body {
 .bg-blue{
     color: white;
     text-transform: uppercase;
-    background-color: royalblue;
+    background-color: #4581ca;
 }
 
 
@@ -125,10 +130,10 @@ body {
     overflow: hidden;
     overflow-y: scroll;
 }
-*/
+ */
 
 #list-contacts{
-  height: calc(100vh-120px);
+  height: calc(100vh - 120px);
   overflow: auto;
 }
 
@@ -202,6 +207,3 @@ body {
   margin-top: -15px;
 }
 
-.visible{
-  display: none;
-}
